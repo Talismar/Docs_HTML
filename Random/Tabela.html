@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Nome completo</label>
+    <input id="name" type="text">
+
+    <br><br>
+    <form action="">
+        <input id="name" type="text" value="Alguma coisa">
+        <button type="reset">Enviar</button>
+    </form>
+
+    <br><br><br>
+
+    <datalist id="nomes">
+        <option>Talismar</option>
+        <option>Talismar</option>
+        <option>Talismar</option>
+        <option>Talismar</option>
+        <option>Talismar</option>
+    </datalist>
+    <input type="text" list="nomes">
+
+    <br><br><br>
+    <input type="email" autocomplete="email">
+
+    <h1>Aprendendo mais sobre Tabelas</h1>
+
+    <form action="">
+        <input type="password" minlength="4" maxlength="8" size="9" title="Preencha os campos de maneira correta">
+        <button type="submit">Enviar </button>
+
+        <br><br><br><br><br>
+        <form action="">
+            <input type="email" pattern=".+rocketseat\.com\.br" title="Somente email talismar">
+            <button type="submit">Enviar</button>
+        </form>
+    </form>
+
+    <datalist id="colores">
+        <option>#0000ff</option>
+    </datalist>
+    <input type="color" list="colores">
+
+    <fieldset>
+        <legend>Talismar</legend>
+        <div>
+            <input type="checkbox" id="coding" name="interest" value="coding" checked>
+            <label for="coding">Conding</label>
+        </div>
+        <div>
+            <input type="checkbox" id="music" name="interest" value="music" checked>
+            <label for="music">Music</label>
+        </div>
+    </fieldset>
+
+    <br><br><br>
+    <fieldset>
+        <legend>Bora tomar um cafe</legend>
+        <input type="radio" id="yep" checked>
+    </fieldset>
+
+    <br><br>
+    <label for=""></label>
+    <textarea name="message" rows="2" cols="30" maxlength="5"></textarea>
+
+    <br><br>
+    <label for="carselect">Qual modelo voceprefere</label>
+    <select name="carmodel" id="carselect">
+        <option value="">Selecione um modelo</option>
+        <option value="fiat">Uno</option>
+        <option value="audi">A3</option>
+    </select>
+
+    <br><br>
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="name">Nome</label>
+            <div>
+                <input id="name" name="name" type="name">
+            </div>
+            <br>
+
+            <label for="email">Email</label>
+
+            <div>
+                <input id="email" name="name" type="email" size="31">
+            </div>
+            <br>
+            <div>
+                <label for="">Mensagem</label>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Digite sua mensagens aqui"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <blockquote>
+        Nós (programadores) somos pagos para resolver problemas,
+        não para memorizar soluções.
+        <cite>─ Mayk Brito</cite>
+    </blockquote>
+</body>
+</html>
