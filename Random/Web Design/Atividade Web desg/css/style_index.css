@@ -1,0 +1,105 @@
+body{
+    background-color:#F5F5F5;
+    font-family:  'Noto Sans JP', sans-serif;
+    width: 1280px;
+    margin: 0;
+    padding: 0px;
+    margin: auto;
+}
+img{
+    width: 300px;
+    }
+
+h1{
+    font-family: 'Staatliches', cursive;
+    color: #060677;    
+    }
+
+a{
+     text-decoration: none; 
+     color:  brown;
+    }
+h2 {
+    font-family: sans-serif;    
+    }    
+p{
+    color:#424141;
+    font-size: 20px;
+    } 
+.titulo {
+    font-size: 72px;
+    color: #060677;
+    font-family:  'Noto Sans JP', sans-serif;
+    } 
+h2, h3 {
+    color: #060677;
+}
+ul {
+    font-size: 20px;
+    }
+table{
+    font-size:20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    }
+td, th{
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 30px 10px 30px;
+    }
+th{        
+    border-color: black;
+    background-color: #060677;
+    color: cornsilk;        
+    }
+.link02{
+    font-size: 20px;
+    color:brown;
+    text-decoration: none;
+    }
+.imagem{
+    margin: 20px 0px 20px 0px;
+    position: relative;  
+    width: 500px;  
+    height: 300px;
+    }    
+.test .teste {
+    list-style: none;    
+}
+.test li{
+    display: inline;
+    padding: 12px 20px;         
+    }
+header{
+    border-bottom-style: solid;
+    border-bottom-width: 4px ; 
+    margin-bottom: 10px;
+    }
+footer{
+    border-top: 4px solid black;
+    font-size: 16px; 
+    padding-top: 20px;      
+}   
+.rodape{
+    list-style: none;    
+    
+    padding-bottom: 20px;
+    
+    }
+.lista-rod{
+    display: block;    
+    font-size: 16px;
+    }
+nav .list-ativ {
+    padding: 0px;
+    list-style-type: circle black;
+    }
+nav ul{
+    display: block;
+}
+footer p{
+    border-top: 1px ridge black;
+    font-size: 16px;
+    padding-top: 30px;
+}    

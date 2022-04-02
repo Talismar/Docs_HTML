@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: monospace;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap; /* Quebrar a linha */
+            
+
+            justify-content: space-evenly;
+            align-content: center;
+        }
+
+        #item1 {
+            background-color: lime;
+            margin: 5px;
+            height: 20px;
+        }
+
+        #item2 {
+            background-color: yellow;
+            
+            margin: 5px;
+            height: 20px;
+        }
+
+        #item3 {
+            background-color: blue;
+            margin: 5px;
+            height: 20px;
+            /* flex: 1; */
+        }
+
+        #item4 {
+            background-color: red;
+            margin: 5px;
+            height: 20px;
+            /* flex: 1; */
+        }
+
+        #item5 {
+            background-color: aqua;
+            /* flex: 1; */
+            margin: 5px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container flex">
+        <div id="item1">header</div>
+        <div id="item2">Body</div>
+        <div id="item3">Menu</div>
+        <div id="item4">Mais</div>
+        <div id="item5">Footer</div>
+        <!-- <div id="item5">asdaaaaad</div>
+        <div id="item5">asdaaaaad</div> -->
+    </div>
+    <!-- <select id="direction" onchange="changeGridAutoFlow()">
+        <option value="column">column</option>
+        <option value="row">row</option>
+    </select>
+    <input id="dense" type="checkbox" onchange="changeGridAutoFlow()">
+    <label for="dense">dense</label> -->
+
+</body>
+
+</html>

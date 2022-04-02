@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 24px;
+        }
+
+        .header {
+            background-color: rgb(0, 0, 0);
+            grid-area: a;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 2px;
+        }
+
+        .sidenav {
+            grid-area: b;
+            background-color: rgba(65, 65, 65, 0.26);
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .content {
+            background-color: rgb(101, 165, 42);
+            grid-area: c;
+            /* grid-row-start: 1;
+            grid-row-end: 2; */
+        }
+
+        .footer {
+            background-color: rgb(0, 0, 0);
+            grid-area: d;
+            display: grid;
+            justify-items: center;
+            letter-spacing: 20px;
+            color: white;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 3fr;
+            grid-template-rows: 10vh 80vh 10vh;
+            grid-template-areas: "a""b""d";
+        }
+
+        .input {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            height: 40px;
+            width: 220px;
+            text-align: end;
+
+            background-color: #645e5e38;
+            border: none;
+            border-radius: 10px 5px 5px 10px;
+            margin: 5px 0px 10px 0px;
+            padding-top: 10px;
+            padding-right: 5px;
+        }
+
+        .input:hover {
+            background-color: #42414138;
+        }
+
+        .operators {
+            display: grid;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            align-items: center;
+            grid-template-columns: 50px 50px 50px 50px;
+            grid-template-rows: 50px;
+            column-gap: 10px;
+            margin-top: 5px;
+
+        }
+
+        .operators div {
+            border: 0.5px solid silver;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .operators div:hover {
+            border: 0.5px solid rgb(53, 51, 51);
+            background-color: slategrey;
+            color: white;
+        }
+
+        .numbers {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 50px 50px 50px;
+            grid-template-rows: 50px 50px 50px 50px;
+            column-gap: 10px;
+            row-gap: 20px;
+            margin-bottom: 10px;
+
+        }
+
+        .numbers div {
+            border: 0.5px solid silver;
+            padding: 15px;
+            cursor: grabbing;
+        }
+
+        .numbers div:hover {
+            background-color: rgba(129, 129, 129, 0.26);
+        }
+
+        .alinhamento {
+            display: grid;
+            align-items: center;
+            column-gap: 10px;
+            margin-top: 20px;
+        }
+
+        .leftPanel {
+            justify-items: start;
+            grid-row-start: 3;
+            grid-row-end: 4;
+
+        }
+
+        .equal {
+            justify-items: end;
+            display: grid;
+            align-content: space-around;
+            justify-content: center;
+            margin-right: 36px;
+            width: 100%;
+            height: 100%;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: #1e62e2be;
+            margin-bottom: 10px;
+        }
+
+        .equal:hover {
+            background-color: #0450ddfb;
+            color: white;
+        }
+
+        .calculator {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            justify-items: center;
+            text-align: center;
+
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item header">
+            <h1>Calculator</h1>
+        </div>
+        <div class="item sidenav">
+            <div class="calculator">
+                <div class="input" id="input"></div>
+                <div class="buttons">
+                    <div class="operators">
+                        <div onclick="start('+')">+</div>
+                        <div onclick="start('-')">-</div>
+                        <div onclick="start('*')">x</div>
+                        <div onclick="start('/')">&divide;</div>
+                    </div>
+                    <div class="alinhamento">
+                        <div class="leftPanel">
+                            <div class="numbers">
+                                <div onclick="start('7')">7</div>
+                                <div onclick="start('8')">8</div>
+                                <div onclick="start('9')">9</div>
+
+                                <div onclick="start('4')">4</div>
+                                <div onclick="start('5')">5</div>
+                                <div onclick="start('6')">6</div>
+
+                                <div onclick="start('1')">1</div>
+                                <div onclick="start('2')">2</div>
+                                <div onclick="start('3')">3</div>
+
+                                <div onclick="start('0')">0</div>
+                                <div>.</div>
+                                <div onclick="start('c')" id="clear">C</div>
+                            </div>
+                        </div>
+                        <div onclick="calcular()" class="equal" id="result">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item content"></div>
+        <div class="item footer">
+            <h1>+-&times;&divide;</h1>
+        </div>
+    </div>
+
+    <script>
+        //Selectores
+        /*  let input = document.querySelector(".input")
+         let numbers = document.querySelector(".numbers")
+         let div = document.querySelectorAll(".numbers div") */
+
+        function start(num) {
+            var input = document.querySelector(".input").innerHTML
+            document.querySelector(".input").innerHTML = input + num
+
+            if (num == 'c') {
+                document.querySelector(".input").innerHTML = ''
+            }
+
+
+        }
+
+        function calcular() {
+            var imput = document.querySelector(".input").innerHTML
+            if (imput) {
+                document.querySelector(".input").innerHTML = eval(imput)
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

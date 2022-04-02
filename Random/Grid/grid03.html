@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .item1 {
+            grid-column: 1/2;
+            /* grid-area: footer; */
+            width: 100%;
+        }
+
+        .item2 {
+            
+            grid-column-start: 1;
+            grid-column-end: 2;
+         /* grid-area: menu; */
+        }
+
+       /*  .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: header;
+        } */
+
+        .grid-container {
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 200px 200px 200px ;
+           /*  grid-template-areas:
+                'menu header '
+                'menu main  '
+                'right footer'; */
+
+            /* justify-content: space-evenly;
+            align-content: space-evenly;    */
+
+            /* justify-items:center ;
+            align-items: center; */
+            
+            gap: 10px;
+            /* row-gap: 10px;
+            column-gap: 10px; */
+            background-color: #2196F3;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            /* padding: 20px 0; */
+            font-size: 30px;
+            width: 100px;
+            height: 100px;
+
+            justify-self: center;
+            align-self: center;
+        }
+
+        h1{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1"><h1>Titulo</h1></div>
+        <div class="item2">Lorem</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+</html>

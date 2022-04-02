@@ -1,0 +1,47 @@
+body 
+    {
+    background-color:#F5F5F5;
+    font-family:  'Noto Sans JP', sans-serif;
+    }
+p   
+    {
+    color: #424141;
+    font-size:  20px;
+    }
+h1  
+    {
+    font-size: 72px;
+    color: #060677;
+    }
+table 
+    {
+    font-size:20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    }
+td
+    {
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 30px 10px 30px;
+    }
+th
+    {
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        background-color: #060677;
+        color: cornsilk;
+        padding: 10px 30px 10px 30px;
+    }
+a 
+    {
+    font-size: 20px;
+    color:brown;
+    text-decoration: none;
+    }
+img 
+    {
+    margin: 20px 0px 20px 0px;    
+    }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #grid {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 50px 50px 50px;
+
+            justify-content: center;
+            align-content: center;
+            
+            /* or 'row', 'row dense', 'column dense' */
+            
+            
+        }
+
+        #item1 {
+            background-color: lime;
+            height: 40px;
+            width: 40px;
+            
+            /* Para alinhar o item ao centro da celular */
+            justify-self: center;
+            align-self: center;
+        }
+
+        #item2 {
+            background-color: yellow;
+            height: 40px;
+            width: 40px;
+           /*  justify-self: center;
+            align-self: center; */
+        }
+
+        #item3 {
+            background-color: blue;
+            height: 40px;
+            width: 40px;
+
+            justify-self: center;
+        }
+
+        #item4 {            
+            background-color: red;
+            height: 40px;
+            width: 40px;
+            justify-self: center;
+        }
+
+        #item5 {
+            background-color: aqua;
+            height: 40px;
+            width: 40px;
+
+            justify-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid">
+        <div id="item1"></div>
+        <div id="item2"></div>
+        <div id="item3"></div>
+        <div id="item4"></div>
+        <div id="item5"></div>
+    </div>
+    <!-- <select id="direction" onchange="changeGridAutoFlow()">
+        <option value="column">column</option>
+        <option value="row">row</option>
+    </select>
+    <input id="dense" type="checkbox" onchange="changeGridAutoFlow()">
+    <label for="dense">dense</label> -->
+
+</body>
+
+</html>

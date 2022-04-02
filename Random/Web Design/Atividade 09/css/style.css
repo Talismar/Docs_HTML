@@ -1,0 +1,80 @@
+body{
+    background-color: whitesmoke;
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+main{
+    margin-top: 290px;
+}
+header, footer{
+    background-color: #eec0c4;
+    opacity: 0.97;
+    padding: 5px 15px;
+}
+li{
+    list-style: none;
+    display: inline;
+    font-family: 'Style Script', cursive;
+    font-size: 26px;
+    padding: 10px 30px;
+}
+.flex-conteneir{
+    display: flex;
+    flex-wrap: nowrap ;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    color: #333;
+}
+.flex-conteneir-produtos, .flex-conteneir-rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.flex-produtos{
+    width: 26%;
+    margin: 30px 0px;
+}
+    
+a{
+    text-decoration: none;
+    color: #333;
+    margin: 0;
+}
+.lista{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+h2{
+    color:#f06c98;
+}
+
+nav ul li a:hover{
+    color: aliceblue;
+}
+.sub-menu{
+    position: absolute;
+    background-color: #a8a2a4;
+    padding:  0px;
+    width: 150px;
+    margin-left: 250px;
+    display: none;
+}
+.sub-menu li{
+    display: block;
+    padding: 0px 3px;
+    border-bottom: 1px solid rgb(51, 51, 51);
+}
+ul li:hover .sub-menu{
+    display: block;
+}

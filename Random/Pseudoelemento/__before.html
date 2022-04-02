@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pa-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            counter-increment: h3;
+            display: list-item;
+        }
+
+        h3::marker {
+            content: "#"counter(h3) " ";
+            color: lightsalmon;
+            font-weight: bold;
+        }
+
+        h3::before{
+            /*Criar o elemento*/
+            content: '';
+            width: 100px;
+            height: 3px;
+            display: block;
+            background-color: currentColor;
+            margin: 10px 40px;
+        }
+
+        body {
+            counter-reset: h3;
+            line-height: 1rem;
+            font-family: system-ui;
+            margin-left: 2rem;
+        }
+
+        p::before{
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: currentColor;
+        }
+
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h3>Itaque sequi eaque earum laboriosam.</h3>
+    <p>Ratione culpa reprehenderit beatae quaerat voluptatibus, debitis iusto?</p>
+    <h3>Laudantium sapiente commodi quidem excepturi!</h3>
+    <p class="after">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+
+</html>

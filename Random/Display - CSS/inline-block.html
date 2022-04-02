@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            box-sizing: border-box;
+            /* margin: 0px;
+            padding: 0px; */
+            overflow: hidden;
+        }
+
+        .container{
+           text-align: justify;
+        }
+
+        /* Para deixar os itens ao lado do outro com espaços justificado temos que usar o after */
+        .container::after{
+            content: '';
+            width: 100%;
+            display: inline-block;
+        }
+
+        .it1{
+            background-color: blue;
+            display: inline-block;
+            color: white;
+            text-align: center;   
+            height: 200px;
+            width:25%;
+        }
+        
+        .it2{
+            background-color: rebeccapurple;
+            display: inline-block;
+            color: white;
+            text-align: center;   
+            height: 200px;
+            width:25%;
+        }
+    
+        .it3{
+            background-color: greenyellow;
+            display: inline-block;
+            color: white;
+            text-align: center;   
+            height: 200px;
+            width:25%;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="container">
+        <div class="it1"><h1>Talismar</h1></div>
+        <div class="it2"><h1>Fernandes</h1></div>
+        <div class="it3"><h1>Costa</h1></div>
+    </section>
+</body>
+</html>

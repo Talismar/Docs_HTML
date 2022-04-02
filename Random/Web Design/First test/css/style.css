@@ -1,0 +1,95 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: whitesmoke;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+header, footer{
+    background-color: #271C2D ;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap ;    
+    align-items: flex-start;
+    flex-direction: column;   
+}
+.cabecalho nav ul{
+    padding: 0px;
+}
+.corlink{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 56px;
+    font-style: italic;
+    margin-top: 0px;
+}
+.cor1{
+    color: red;
+}
+.cor2{
+    color: white;   
+}
+h2{
+    font-size: 32px;
+    margin: 0;
+}
+.flex-manchete, .noticias {
+    width: 900px;
+    height: auto;
+    margin: 0 auto 0 auto;
+    display: flex;    
+    flex-direction: column;
+    }
+.flex-filho-manchete{
+    margin: 30px 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 800px;
+    margin: 5px;
+}
+.float-img{
+    width: 500px;
+    margin: 0px 0px 0px 15px;
+    float: right;
+}
+.fid{
+    clear: both;
+}
+.data{
+    font-size: 20px;
+   margin: 0;
+}
+.lista{
+    list-style: none;
+    display: inline;
+    padding: 20px;
+    margin: 0px 10px 0px 10px;
+}
+p{
+    margin: 0px 0px 30px 0px;
+    font-size: 20px;
+}
+.titulo-conteudo{
+    font-size: 48px;
+    text-align:center; 
+    margin-bottom: 30px;
+}
+h3, h4{
+    margin: 0px 0px 30px 0px;
+}
+li{
+    margin: 0px 30px 30px 0px;
+    font-size: 20px;
+}
+ul{
+    margin: 0px;
+}

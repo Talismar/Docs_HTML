@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Campos de Texto-->
+    <form action="">
+        <label for="fname">Talismar</label><br>
+        <input type="text" id="fname" name="fname"><br>
+    </form>
+    <br><br><br>
+
+    <!--Botoes do Radio-->
+    <form action="">
+        <input type="radio" id="hmtl" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="hmtl" name="fav_language" value="HTML">
+        <label for="html">CSS</label><br>
+        <input type="radio" id="hmtl" name="fav_language" value="HTML">
+        <label for="html">Java</label><br>
+    </form>
+    <br><br><br>
+
+    <!--Caixas de seleçao-->
+
+    <form action="">
+        <input type="checkbox" id="vehicke1" name="vehicke1" value="Bike">
+        <label for="vehicle1">Talismar</label><br>
+        <input type="checkbox" id="vehicke1" name="vehicke1" value="Bike">
+        <label for="vehicle2">Talismar</label><br>
+        <input type="checkbox" id="vehicke1" name="vehicke1" value="Bike">
+        <label for="vehicle3">Talismar</label><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br><br><br>
+
+    <!--O botão Enviar-->
+
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <br><br><br>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <br><br><br>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <br><br><br>
+
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Talismar">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <br><br><br>
+
+    <form action="" 
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <br><br><br>
+
+    <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="submit" value="Talismar Fernandes costa">
+      </form>
+
+      <br><br><br>
+
+      <form action="/action_page.php">
+        <label for="myfile">Selecione o arquivo:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <br><br><br>
+
+      <form action="/action_page.php">
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
+        <input type="submit" value="Submit" >
+        
+      </form>
+      
+</body>
+
+</html>
