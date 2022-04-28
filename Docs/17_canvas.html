@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Class 17 - Canvas class</title>
+  </head>
+  <style>
+    canvas{
+      border: 2px black solid ;    
+    }
+  </style>
+
+  <script>
+    function desenha(){
+      var canvas = document.getElementById('canvas')
+      var ctx = canvas.getContext('2d')
+      ctx.fillRect(0,0,500,100)
+    }
+  </script>
+
+  <body onload="desenha()">
+  
+    <canvas id="canvas" width="500px" height="500px">
+      Your browser not tem suporte ao canvas
+    </canvas>
+  
+  </body>
+</html>

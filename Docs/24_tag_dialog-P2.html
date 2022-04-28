@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="curso, tutorial, apostila, livro">
+  <meta name="description" content="Curso de HTML 5">
+  <title>Class 24 - Dialog - Part 2</title>
+
+  <style>
+
+    header h3{
+      padding-bottom: 7px;
+      text-align: center;
+      border-bottom: 1px solid;
+      margin-bottom: 0px;
+    }
+
+    main{
+      background: greenyellow;
+      padding: 10px;
+    }
+
+    dialog{
+      border: 0;
+      padding: 0;
+      box-shadow: 0 0 10px black;
+      background-color: rgba(172, 255, 47, 0.425);
+    }
+
+    dialog::backdrop{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    footer{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      align-items: center;
+    }    
+    
+    button{
+      border: solid 2px;
+      /* the border will curve into a 'D' */
+      border-radius: 10px 40px 40px 10px;
+      background-color: black;
+      color: whitesmoke;
+      border-color: blueviolet;
+    }
+
+  </style>
+
+  <script>
+    
+    function open_func(){
+      document.getElementById("d1").setAttribute("open", "")
+      document.querySelectorAll("button")[0].innerHTML="Close"
+    }
+
+    function close_func(){
+      document.getElementById("d1").removeAttribute("open", "")
+      document.querySelectorAll("button")[0].innerHTML="Open"
+    }
+
+    function controlDialog(){
+      if(document.getElementById("d1").open){
+        close_func()
+      }
+      else{
+        open_func()
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <button onclick="controlDialog()">Open</button>
+  
+  <dialog id="d1">
+    <header>
+      <h3>My Title</h3>
+    </header>
+
+    <main >
+    
+      <p>Talismar Fernandes <dfn title="Definition here">Costa</dfn></p>
+      <p>Talismar Fernandes <abbr title="Costa Family">Costa</abbr></p>
+
+    </main>
+
+    <footer>
+      <h3>My footer</h3>
+      <button onclick="close_func()">Close</button>
+    </footer>
+
+  </dialog>
+  
+</body>
+</html>

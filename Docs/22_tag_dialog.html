@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="curso, tutorial, apostila, livro">
+  <meta name="description" content="Curso de HTML 5">
+  <title>Class 22 - Dialog</title>
+
+  <script>
+    
+    function open_func(){
+      document.getElementById("d1").setAttribute("open", "")
+    }
+
+    function close_func(){
+      document.getElementById("d1").removeAttribute("open", "")
+    }
+
+  </script>
+
+</head>
+<body>
+  <button onclick="open_func()">Open</button>
+  <button onclick="close_func()">Close</button>
+  <dialog id="d1">
+    <p>Talismar Fernandes <dfn title="Title here">Costa</dfn></p>
+    <p>Talismar Fernandes <abbr title="Title here">Costa</abbr></p>
+  </dialog>
+</body>
+</html>

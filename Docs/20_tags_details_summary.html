@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 20 - Details and Summaty</title>
+  
+  <style>
+    *{
+      
+      margin: 0%;
+      padding: 0%;
+    }
+    
+    details summary::marker {
+      color: rgb(0, 47, 255);
+    }
+
+    summary{
+      background: rgb(255, 230, 0);
+      margin: 1%;
+    }
+
+    details article p{
+      background-color: rgba(224, 224, 224, 0.836);
+      margin-left: 20px;
+      margin-right: 580px;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- 
+    Usar o summary como o primeiro filho de detaills
+    ele serve para modificar o title do details
+  -->
+
+  <details open>
+    <summary>Course HTML 5</summary>
+    <article>
+      <p>HTML</p>
+      <p>Javascript</p>
+      <p>Python</p>
+    </article>
+  </details>
+
+  <p>By Talismar</p>
+</body>
+</html>
