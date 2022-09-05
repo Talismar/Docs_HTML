@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 37 - Tags form input label</title>
+  <style>
+    form{
+      border:1px solid #000;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #aaa;
+    }
+
+    div{
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form name="" action="#" method="get">
+    <label for="">Phone:</label>
+    <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx) 9xxx-xxxx">
+    
+    <label for="">Password:</label>
+    <input type="password" name="f_password" pattern="[a-zA-Z0-9]{5}">
+    
+    <br><br>
+    <label for="">Pick a Number:</label>
+    <input type="number" name="f_number" step="2" min="0" max="10">
+    
+    <br><br>
+    <label for="">Search:</label>
+    <input type="search" name="f_search">
+
+    <div>
+      <input type="submit" name="f_submit" value="Send">
+    </div>
+  </form>
+</body>
+</html>

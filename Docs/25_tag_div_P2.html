@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./25_icon.ico" type="image/x-icon">
+  <title>Class 25 - Div P2</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0px;
+    }
+    
+    body{
+      margin: 0px;
+      width: 90%;
+    }
+
+    .root{
+      border: 1px dashed black;
+      margin: auto;
+      width: 90%;
+    }
+    
+    .header{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .main{
+      position: absolute;
+      top: 90px;
+      left: 0px;
+      width: 100%;
+    }
+
+    .footer{
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      text-align: center;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .box0, .box1, .box2{
+      width: 100px;
+      height: 30px;
+    }
+
+    .box0{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background: red;
+    }
+
+    .box1{
+      position: relative;
+      top: 0px;
+      left: 0px;
+      background: gray;
+    }
+
+    .box2{
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      background: orange;
+      z-index: 1;
+      margin: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="header">
+      <div class="root">
+        <h1>Title</h1>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="root">
+        <p class="box0"><b>Session 00</b></p>
+        <p class="box1"><b>Session 01</b></p>
+        <p class="box2"><b>Session 02</b></p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt perferendis harum distinctio dolores praesentium, illo architecto dignissimos ducimus non sequi enim nostrum tempora impedit quaerat! Pariatur quos provident reprehenderit repellendus!
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="root">
+        <p>This is my footer</p>
+      </div>
+    </div>
+
+  </div>
+
+</html>

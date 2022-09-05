@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 34 - Tags form input label</title>
+  <style>
+    form{
+      border:1px solid #000;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #aaa;
+    }
+
+    div{
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form name="" action="#" method="get">
+    <label for="">Hours:</label>
+    <input type="time" name="f_time" min="09:00" max="17:00" required>
+    
+    <label for="">Date:</label>
+    <input type="date" name="f_time" min="04-28-2022" max="04-28-2023" required>
+    
+    <label for="">Datetime:</label>
+    <input type="datetime-local" name="f_time">
+    
+    
+    <div>
+      <input type="submit" name="f_button" value="Send">
+    </div>
+  </form>
+</body>
+</html>

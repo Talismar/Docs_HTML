@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06 - Ordenação</title>
+
+  <style>
+    html, body, #app{
+      height: 100%;
+      margin: 0;
+      color: white;
+      font-weight: 900;
+    }
+    
+    #app{
+      display: flex;
+    }
+
+    .box{
+      width: 300px;
+      height: 60px;
+      margin: 5px;      
+    }
+
+    .blue{
+      background: #00f;
+      order: 0;
+    }
+
+    .green{
+      background: #0f0;
+      order: 1;
+    }
+
+    .red{
+      background: blueviolet;
+
+      /* Ordem quando temos o pai com display flex */
+      order: 2;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="app">
+    <div class="box red">1</div>
+    <div class="box green">2</div>
+    <div class="box blue">3</div>
+  </div>
+</body>
+</html>

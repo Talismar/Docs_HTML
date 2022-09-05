@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 - Configurando wrap de itens</title>
+
+  <style>
+    html, body, #app{
+      height: 100%;
+      margin: 0;
+    }
+    
+    #app{
+      display: flex;
+
+      /* Quebra de linha */
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      /* 
+        Serve para align os elemento quando estão em mais de uma linha
+        quebrada, ou seja quando usar o flew-wrap temos essa elemento para work
+      */
+      align-content: flex-start;
+    }
+
+    .box{
+      width: 300px;
+      height: 60px;
+      margin: 5px;
+      background-color: blueviolet;
+      
+    }
+  </style>
+
+</head>
+<body>
+  <div id="app">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+</body>
+</html>

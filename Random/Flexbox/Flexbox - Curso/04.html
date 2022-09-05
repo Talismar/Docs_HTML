@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Redimensionamento</title>
+
+  <style>
+    html, body, #app{
+      height: 100%;
+      margin: 0;
+    }
+    
+    #app{
+      display: flex;
+      
+    }
+
+    .box{
+      width: 300px;
+      height: 60px;
+      margin: 5px;
+      background-color: blueviolet;
+      
+      /* 
+         Passa a ocupar toda a largura disponivel
+         Elemento passa a ser aumentado quando a tela é redimensionada
+         
+         flex-grow: 1;
+      */
+
+      /* 
+         Configurar se o elemento pode espremer ou não
+
+         flex-shrink: 1;
+      */
+      
+      /* 
+         Temos somente o flex que pode ser uma junção do flex-grow e flex-shrink
+
+         Primeiro numeros diz respeito ao flex-grow e segundo ao flex-shrink
+         flex: 1 0;
+      */
+      flex: 1 0;
+
+      
+    }
+  </style>
+
+</head>
+<body>
+  <div id="app">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+</body>
+</html>
